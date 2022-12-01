@@ -16,7 +16,7 @@ sudo pacman-key --populate
 sudo pacman -Syu
 sudo pacman -S archlinux-keyring 											# Note: ArchWSL says this is optional, but THIS PACKAGE IS MANDITORY! It should be the first one installed.
 sudo pacman -S --needed base-devel git										# When you install the `base-devel` package for ArchWSL, `fakeroot` and `fakeroot-tcp` are in conflict. When asked if you want to replace `fakeroot-tcp` with `fakeroot` SAY NO!
-sudo git clone https://aur.archlinux.org/yay.git							# This will install `yay` which will allow you access to the ArchLinux User Repository.
+git clone https://aur.archlinux.org/yay.git							# This will install `yay` which will allow you access to the ArchLinux User Repository.
 cd yay																		# Go to the yay directory  (TODO: Could I have put this in a Downloads directory?)
 makepkg -si																	# Make the `yay` package, this will also install the Go Language (`golang`) that `yay` needs to do stuff.
 yay --version		# Verify that yay was installed.
